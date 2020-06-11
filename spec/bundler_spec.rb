@@ -16,7 +16,6 @@ describe "Bundler" do
     it "has correct syntax" do
       expect(@bundle_output).not_to include("There was an error parsing")
     end
-
     # http://bundler.io/v1.3/gemfile.html
     it "should specify rubygems as a source using the SSL protocol on the first line" do
       expect(@gemfile_text =~ /source ['"]https:\/\/rubygems\.org['"]/).not_to eq(nil)
